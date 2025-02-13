@@ -12,12 +12,12 @@
 
 3. **配置和使用**：
    - 模型下载完成后，你就可以在终端中与 LLaMa3 进行交互了。在终端中输入问题，LLaMa3 会给出回答。
-   - 如果你想要更直观的图形界面进行交互，可以考虑使用一些基于 ollama 的 Web UI 项目，如[ollama-webui-lite](https://github.com/ollama-webui/ollama-webui-lite)。首先需要安装[Node.js](https://nodejs.org/)，然后在终端中执行以下命令来部署 Web UI：
-     1. `git clone https://github.com/ollama-webui/ollama-webui-lite.git`：克隆项目到本地。
-     2. `cd ollama-webui-lite`：进入项目目录。
+   - 如果你想要更直观的图形界面进行交互，可以考虑使用一些基于 ollama 的 Web UI 项目，如[ollama-vue-demo](https://github.com/webdzq/ollama-vue-demo.git)。首先需要安装[Node.js](https://nodejs.org/)，然后在终端中执行以下命令来部署 Web UI：
+     1. `git clone https://github.com/webdzq/ollama-vue-demo.git`：克隆项目到本地。
+     2. `cd ollama-vue-demo`：进入项目目录。
      3. `npm install`：安装项目依赖。
      4. `npm run dev`：启动开发服务器。
-     5. 启动成功后，在浏览器中访问 `http://localhost:3000`，即可看到图形界面，在界面中输入问题与 LLaMa3 进行交互。
+     5. 启动成功后，在浏览器中访问 `http://localhost:3001`，即可看到图形界面，在界面中输入问题与 LLaMa3 进行交互。
 4. **其他**:
    - `ollama `支持的模型非常多，包括文本/对话模型、图片模型和视频模型等等，根据需要安装不同模型。常用的模型有：llama3、DeepSeek-R1、qwen2.5等等。下载模型要主要参数规模，规模越大，本地占用的空间越大，大家量力而行哈！
 
