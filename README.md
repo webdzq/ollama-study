@@ -1,5 +1,7 @@
 # ollama-study
 
+ollama是大模型本地集成工具，官网提供很多大模型的接入；方便学习大模型的使用。
+
 对ollama的学习，主要在mac上本地部署ollama，然后完成prompt（大模型提示词）的一些功能实现。包括最火的deepseek-r1模型等等。使用的python环境，python环境的配置略，大家自行安排。python的版本在3.9.x以上就行，最好使用最新稳定版本。可以使用vscode、notebook等。我使用的是vscode。
 
 
@@ -54,7 +56,7 @@
 
 4.3 ollama项目介绍：[ollama/ollama: Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. (github.com)](https://github.com/ollama/ollama)
 
-## 6、 对AI的看法
+## 6、 对大模型的看法
 
  文字也好，图片也好，都是根据一些信息做匹配动作，还是和查字典一样。只是输入的内容形式不用了。要想查询到好的结果，需要好好打磨查询条件（提示词)。
 
