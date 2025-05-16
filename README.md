@@ -2,7 +2,15 @@
 
 对ollama的学习，主要在mac上本地部署ollama，然后完成prompt（大模型提示词）的一些功能实现。包括最火的deepseek-r1模型等等。使用的python环境，python环境的配置略，大家自行安排。python的版本在3.9.x以上就行，最好使用最新稳定版本。可以使用vscode、notebook等。我使用的是vscode。
 
-## 1、ollama的安装
+
+## 1、项目目录介绍
+
+- demos里都是源码，包括看图写话、文本问答、gradioUI问答页面、文本转tts语音、deepseek模型使用等一些常用场景。
+- llm里是大模型提示词源码，好的提示词模板更能得到想要的结果，所以非常有必要研究一下。
+- nvidia 里是24年10月参与的英伟达的黑客松训练营的源码。是基于NVIDIA的智能问答系统。
+- ollama-vue-demo，基于ollama为后台，vue为前端UI的demo，实现用户输入文本后通过大模型输出查询内容的工程事例。
+
+## 2、ollama的安装
 
 1. **安装 ollama**：
 
@@ -24,7 +32,7 @@
 
    - `ollama `支持的模型非常多，包括文本/对话模型、图片模型和视频模型等等，根据需要安装不同模型。常用的模型有：llama3、DeepSeek-R1、qwen2.5等等。下载模型要主要参数规模，规模越大，本地占用的空间越大，大家量力而行哈！
 
-## 2、demo代码执行
+## 3、demo代码执行
 
 2.1 主要参考llm教材的文档，把openai换成ollama中的模型去验证。
 
@@ -32,13 +40,13 @@
 
 2.3 没有验证内容审核模块，langchain和ollama结合使用等功能。
 
-## 3、ollama的优点
+## 4、ollama的优点
 
 3.1 开源免费，本地安装使用，普通配置的电脑都可以本地运行，对于学习大模型很有帮助。
 
 3.2  ollama相当于npm、pip等包管理工具，它是一个大模型管理工具，支持llama3.2、qwen，phi等很多开源模型的使用。通过 `ollama run xx` 来安装。
 
-## 4、文献
+## 5、文献
 
 4.1 面向开发者的大模型学习教程：[目录 (datawhalechina.github.io)](https://datawhalechina.github.io/llm-cookbook/#/README)
 
@@ -46,12 +54,8 @@
 
 4.3 ollama项目介绍：[ollama/ollama: Get up and running with Llama 3.2, Mistral, Gemma 2, and other large language models. (github.com)](https://github.com/ollama/ollama)
 
-## 5、 对AI的看法
+## 6、 对AI的看法
 
- 文字也好，图片也好，都是根据一些信息做匹配动作，还是和查字典一样。只是输入的内容形式不用了。要想查询到好的结果，需要好好打磨查询条件。
+ 文字也好，图片也好，都是根据一些信息做匹配动作，还是和查字典一样。只是输入的内容形式不用了。要想查询到好的结果，需要好好打磨查询条件（提示词)。
 
-## 6、项目目录介绍
-
-- demos里都是源码，包括看图写话、文本问答、gradioUI问答页面、文本转tts语音、deepseek模型使用等。
-- llm里是大模型提示词源码，好的提示词模板更能得到想要的结果，所以非常有必要研究一下。
-- nvidia 里是24年10月参与的英伟达的黑客松训练营的源码。是基于NVIDIA的智能问答系统。
+大模型的出现，改变了以往的查询方式，可以使用文字，图片，音频、视频等作为查询条件，输出内容更丰富。大模型必将改变搜索行业的变革，过去是百度、谷歌统治搜索行业，如果把握好大模型的新时代，你必然成为下一代搜索行业的龙头。
